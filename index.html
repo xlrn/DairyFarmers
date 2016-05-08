@@ -5,17 +5,21 @@
 		<title>Dairy Farmers</title>
 	</head>
 	<body>
+		<body onload="load()">
 		<h1>Dairy Farmers</h1>
 		<p>Milk them cows!</p>
 		<button type="button" onClick="milkClick(1)">Milk Me!</button>
 		<br/>
 		Milk Bottles: <span id="milks">0</span>
 		<br/>
-		<button type="button" onClick="buyUpgrade()">Buy Upgrade!</button>
+		<button type="button" onClick="buyCow()">Buy Cow!</button>
 		<br/>
-		Upgrades: <span id="upgrades">0</span>
+		Cows: <span id="Cows">0</span>
 		<br/>
-		Upgrade Cost: <span id="cost">10</span>
+		Cow Cost: <span id="cost">10</span>
+		<br/>
+		<button type="button" onClick="save()">Save</button>
+		<button type="button" onClick="deleteSave()">Delete Save</button>
 		<script type="text/javascript" src="main.js"></script>
 	</body>
 </html>
