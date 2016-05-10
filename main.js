@@ -5,7 +5,7 @@ function milkClick(number){
 	document.getElementById("milks").innerHTML = MilkBottles;
 };
 
-var Cows = 0;
+var Cows = 1;
 
 function buyCow(){
 	var CowCost = Math.floor(10*Math.pow(1.1, Cows));
@@ -20,7 +20,7 @@ function buyCow(){
 };
 
 window.setInterval(function() {
-	milkClick(Cows);
+	milkClick(Cows - 1);
 }, 1000);
 
 
